@@ -27,9 +27,8 @@ const ContactForm = () => {
         })
       : dispatch(
           addContact({
-            id: nanoid(),
             name: form.name.value,
-            phone: form.phone.value,
+            number: form.number.value,
           })
         );
     form.reset();
@@ -55,7 +54,7 @@ const ContactForm = () => {
       <input
         id={numberInputId}
         type="tel"
-        name="phone"
+        name="number"
         className={css.inputName}
         placeholder="Enter contact's number"
         pattern="\+?\d{1,4}?[\-.\s]?\(?\d{1,3}?\)?[\-.\s]?\d{1,4}[\-.\s]?\d{1,4}[\-.\s]?\d{1,9}"
