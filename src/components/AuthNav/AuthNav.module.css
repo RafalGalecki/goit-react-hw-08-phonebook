@@ -1,11 +1,13 @@
 .link {
   display: inline-block;
   text-decoration: none;
+  font-family: Coiny;
   padding: 12px;
-  font-weight: 700;
-  color: #2a363b;
+  font-weight: 600;
+  font-size: 18px;
+  color: blueviolet;
 }
 
 .link.active {
-  color: #e84a5f;
+  color: violet;
 }

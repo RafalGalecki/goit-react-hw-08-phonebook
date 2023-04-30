@@ -15,7 +15,7 @@ export default function Home() {
     <div style={styles.container}>
       <h1 className={css.title}>
         <div>
-          <p className={css.pMy}>My</p>
+          <p>My</p>
           <p>Secret</p>
           <p>Phonebook</p>
         </div>
