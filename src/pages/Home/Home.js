@@ -1,5 +1,5 @@
-import { ReactSVG } from 'react-svg';
-import css from './Home.module.css'
+//import { ReactSVG } from 'react-svg';
+import css from './Home.module.css';
 
 const styles = {
   container: {
@@ -14,10 +14,12 @@ export default function Home() {
   return (
     <div style={styles.container}>
       <h1 className={css.title}>
-        <p>My</p>
-        <p>Secret</p>
-        <p>Phonebook</p>
-        <p>&#10048;</p>
+        <div>
+          <p className={css.pMy}>My</p>
+          <p>Secret</p>
+          <p>Phonebook</p>
+        </div>
+        <span className={css.flower}>&#10048;</span>
       </h1>
     </div>
   );

@@ -4,3 +4,9 @@
   border: 2px solid violet;
   border-radius: 12px;
 }
+.title {
+  font-family: Coiny;
+  font-size: 24px;
+  font-weight: 400;
+  color: blueviolet;
+}

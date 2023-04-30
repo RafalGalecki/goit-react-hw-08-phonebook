@@ -7,6 +7,7 @@ import Filter from 'components/Filter/Filter';
 import ContactsList from 'components/ContactsList/ContactsList';
 import { selectIsLoading } from 'redux/contacts/selectors';
 import { selectError } from 'redux/contacts/selectors';
+//import css from './Phonebook.module.css';
 
 export default function Phonebook() {
   const dispatch = useDispatch();
@@ -23,7 +24,6 @@ export default function Phonebook() {
         <title>Phonebook</title>
       </Helmet>
       <ContactForm />
-      <h2>Contacts</h2>
       <Filter />
       <ContactsList />
       {!!isLoading && !error && <b>Request in progress...</b>}

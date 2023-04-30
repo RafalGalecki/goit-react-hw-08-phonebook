@@ -11,7 +11,7 @@ const ContactsList = () => {
 
   return (
     <div className={css.contactsListBox}>
-      <h4>
+      <h4 className={css.title}>
         You have {items.length} contact{items.length === 1 ? null : 's'}
       </h4>
       <ul className={css.contactsList}>
