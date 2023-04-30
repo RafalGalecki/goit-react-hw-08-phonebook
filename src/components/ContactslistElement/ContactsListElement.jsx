@@ -13,7 +13,7 @@ const ContactsListElement = ({ contact }) => {
 
   return (
     <div className={css.contactLi}>
-      <span>&#9742;</span>
+      <span>&#10047;</span>
       <span className={css.contact}>{contact.name}:</span>
       <span className={css.contact}>{contact.number}</span>
       <button type="button" className={css.btnDelete} onClick={handleClick}>

@@ -3,9 +3,13 @@
   flex-direction: column;
   justify-content: flex-start;
   min-width: 320px;
+  margin-bottom: 10px;
   gap: 10px;
 }
 .inputFilter {
-    max-width: 200px;
-  padding: 2px 12px;
+  max-width: 200px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border-color: white;
+  outline: none;
 }

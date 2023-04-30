@@ -6,14 +6,18 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  gap: 6px;
 }
 .input {
-border-radius: 6px;
-border-color: white;
+max-width: 200px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border-color: white;
+  outline: none;
 }
 .btn {
-  padding: 4px 10px;
-    border-radius: 6px;
+  padding: 4px 16px;
+    border-radius: 8px;
     border-color: white;
     background-color: blueviolet;
     color: white;

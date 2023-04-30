@@ -1,3 +1,6 @@
 .contactsList {
-  padding-left: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid violet;
+  border-radius: 12px;
 }
