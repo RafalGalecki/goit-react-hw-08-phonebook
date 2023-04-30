@@ -5,15 +5,17 @@
   display: flex;
   flex-direction: row;
   font-family: 'Coiny', cursive;
-  margin: 0;
-  padding: 28px 38px;
   font-weight: 500;
   font-size: 64px;
+  font-style: italic;
+  margin: 0;
+  padding: 28px 42px;
   text-align: 'center';
   color: white;
   border: 2px solid white;
   border-radius: 16px;
-  background-color: violet;
+  background-color: #f977ce;
+background-image: linear-gradient(315deg, #f977ce 0%, #c373f2 74%);
   text-shadow: 5px 5px blueviolet;
   box-shadow: 0 1px 1px rgba(138,43,226,0.12), 
               0 2px 2px rgba(138,43,226,0.12), 
