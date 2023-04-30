@@ -1,0 +1,17 @@
+
+
+.title {
+  font-family: 'Coiny', cursive;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 48;
+  text-align: 'center';
+  color: blueviolet;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: black;
+}
