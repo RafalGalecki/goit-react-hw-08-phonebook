@@ -1,5 +1,6 @@
 .form {
-  width: 320px;
+  min-width: 320px;
+  font-family: Coiny;
 }
 
 .label {
@@ -7,18 +8,31 @@
   flex-direction: column;
   margin-bottom: 16px;
   gap: 6px;
+  color: violet;
 }
 .input {
-max-width: 200px;
+  max-width: 240px;
   padding: 4px 12px;
   border-radius: 6px;
   border-color: white;
   outline: none;
+  color: rgb(89, 22, 153);
+}
+.input::placeholder {
+  color: rgba(138, 43, 226, 0.3);
 }
 .btn {
-  padding: 4px 16px;
-    border-radius: 8px;
-    border-color: white;
-    background-color: blueviolet;
-    color: white;
+  padding: 8px 20px 6px 20px;
+  border-radius: 8px;
+  border-color: white;
+  background-color: blueviolet;
+  color: white;
+  transition-property: background-color, color;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover,
+.btn:focus {
+  background-color: violet;
+  text-shadow: 2px 2px blueviolet;
 }

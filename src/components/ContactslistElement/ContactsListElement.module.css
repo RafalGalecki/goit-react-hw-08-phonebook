@@ -1,6 +1,7 @@
 .contactLi {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 4px;
   gap: 4px;
 }
@@ -8,14 +9,20 @@
   margin-right: 8px;
 }
 .btnDelete {
-  font-size: 10px;
-  font-weight: 500;
-  border-color: aliceblue;
-  border-radius: 6px;
+  font-size: 22px;
+  font-weight: 400;
+  border-color: transparent;
   outline: none;
+  color: blueviolet;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .btnDelete:hover,
 .btnDelete:focus {
-  color: white;
-  background-color: rgb(69, 69, 205);
+  color: red;
+  transform: scale(1.6);
+
+
 }

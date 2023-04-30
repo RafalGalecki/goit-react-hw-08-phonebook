@@ -8,9 +8,14 @@
   gap: 16px;
 }
 .inputFilter {
-  max-width: 200px;
+  font-family: Coiny;
+  max-width: 240px;
   padding: 4px 12px;
   border-radius: 6px;
   border-color: white;
   outline: none;
+  color: rgb(89, 22, 153);
+}
+.inputFilter::placeholder {
+  color: rgba(138, 43, 226, 0.3);
 }

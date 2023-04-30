@@ -17,7 +17,7 @@ const ContactsListElement = ({ contact }) => {
       <span className={css.contact}>{contact.name}:</span>
       <span className={css.contact}>{contact.number}</span>
       <button type="button" className={css.btnDelete} onClick={handleClick}>
-        Delete
+        &#9760;
       </button>
     </div>
   );

@@ -6,12 +6,30 @@
 }
 
 .username {
-  font-weight: 700;
+  font-family: Coiny;
+  font-weight: 400;
+  color: violet;
 }
-.btn {
+/* .btn {
   padding: 4px 16px;
   border-radius: 8px;
   border-color: white;
   background-color: blueviolet;
   color: white;
+} */
+.btn {
+  font-family: Coiny;
+  padding: 6px 16px 4px 16px;
+  border-radius: 8px;
+  border-color: white;
+  background-color: blueviolet;
+  color: white;
+  transition-property: background-color, color;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover,
+.btn:focus {
+  background-color: violet;
+  text-shadow: 2px 2px blueviolet;
 }
