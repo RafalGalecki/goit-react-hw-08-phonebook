@@ -5,6 +5,7 @@
   border: 2px solid violet;
   border-radius: 12px;
   color: blueviolet;
+  overflow: hidden;
 }
 .title {
   font-family: Coiny;

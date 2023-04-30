@@ -1,14 +1,17 @@
 .contactLi {
-  display: flex;
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
   flex-direction: row;
   align-items: center;
   margin-bottom: 4px;
   gap: 4px;
+  
 }
 .contact {
   margin-right: 8px;
 }
 .btnDelete {
+  padding: 2px;
   font-size: 22px;
   font-weight: 400;
   border-color: transparent;
@@ -23,6 +26,4 @@
 .btnDelete:focus {
   color: red;
   transform: scale(1.6);
-
-
-}
+  }
