@@ -1,4 +1,7 @@
 .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 320px;
   font-family: Coiny;
 }
@@ -35,4 +38,10 @@
 .btn:focus {
   background-color: violet;
   text-shadow: 2px 2px blueviolet;
+}
+
+@media screen and (min-width: 520px) {
+  .form {
+    align-items: flex-start;
+  }
 }

@@ -1,13 +1,12 @@
 .contactLi {
   display: grid;
-grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   flex-direction: row;
-  align-items: flex-end;
+  /* align-items: center; */
   margin-bottom: 4px;
   gap: 4px;
   color: rgb(95, 36, 150);
   padding: 4px 0;
-  
 }
 .contact {
   margin-right: 8px;
@@ -26,10 +25,9 @@ grid-template-columns: repeat(3, 1fr);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .btnDelete:hover,
 .btnDelete:focus {
   color: red;
   transform: scale(1.6);
-  }
+}

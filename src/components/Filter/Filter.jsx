@@ -20,7 +20,7 @@ const Filter = () => {
           className={css.inputFilter}
           id={filterId}
           type="search"
-          placeholder="Find contacts by name"
+          placeholder="Enter name"
           onChange={event => handleChange(event)}
         ></input>
       </div>
