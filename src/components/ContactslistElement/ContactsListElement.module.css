@@ -28,6 +28,6 @@
 }
 .btnDelete:hover,
 .btnDelete:focus {
-  color: red;
+  color: magenta;
   transform: scale(1.6);
 }
