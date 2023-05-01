@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectIsLoading } from '../../redux/contacts/selectors.js';
 import { selectFilteredContacts } from 'redux/filter/selectors.js';
+import Loader from 'components/Loader/Loader.js';
 import ContactsListElement from '../ContactslistElement/ContactsListElement';
 import css from './ContactsList.module.css';
 
@@ -15,7 +16,7 @@ const ContactsList = () => {
         You have {items.length} contact{items.length === 1 ? null : 's'}
       </h4>
       <ul className={css.contactsList}>
-        {!!isLoading && <b>Loading contacts...</b>}
+        {!!isLoading && <Loader />}
         {!!items &&
           items.map(contact => (
             <li key={contact.id}>
