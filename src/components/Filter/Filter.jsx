@@ -14,14 +14,16 @@ const Filter = () => {
 
   return (
     <div className={css.filter}>
-      {/* <label htmlFor={filterId}>Find contacts by name</label> */}
-      <input
-        className={css.inputFilter}
-        id={filterId}
-        type="search"
-        placeholder="Find contacts by name"
-        onChange={event => handleChange(event)}
-      ></input>
+      <div className={css.labelled} >
+        <label htmlFor={filterId}>Find contacts</label>
+        <input
+          className={css.inputFilter}
+          id={filterId}
+          type="search"
+          placeholder="Find contacts by name"
+          onChange={event => handleChange(event)}
+        ></input>
+      </div>
     </div>
   );
 };

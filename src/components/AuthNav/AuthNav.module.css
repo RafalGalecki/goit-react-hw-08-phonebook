@@ -1,3 +1,9 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .link {
   display: inline-block;
   text-decoration: none;

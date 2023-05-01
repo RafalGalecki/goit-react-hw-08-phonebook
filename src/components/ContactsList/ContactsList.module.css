@@ -8,8 +8,17 @@
   overflow: hidden;
 }
 .title {
+  display: flex;
   font-family: Coiny;
   font-size: 24px;
   font-weight: 400;
   color: blueviolet;
+  justify-content: center;
+}
+
+@media screen and (min-width: 520px) {
+  .title {
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
 }

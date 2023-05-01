@@ -1,5 +1,7 @@
 .wrapper {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
   margin-right: 10px;
@@ -10,13 +12,7 @@
   font-weight: 400;
   color: violet;
 }
-/* .btn {
-  padding: 4px 16px;
-  border-radius: 8px;
-  border-color: white;
-  background-color: blueviolet;
-  color: white;
-} */
+
 .btn {
   font-family: Coiny;
   padding: 6px 16px 4px 16px;

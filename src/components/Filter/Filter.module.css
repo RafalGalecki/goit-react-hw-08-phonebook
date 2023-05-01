@@ -1,15 +1,16 @@
 .filter {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   min-width: 320px;
   margin-top: 16px;
   margin-bottom: 16px;
+  padding: 10px;
   gap: 16px;
 }
 .inputFilter {
   font-family: Coiny;
-  max-width: 240px;
+  max-width: 400px;
   padding: 4px 12px;
   border-radius: 6px;
   border-color: white;
@@ -18,4 +19,16 @@
 }
 .inputFilter::placeholder {
   color: rgba(138, 43, 226, 0.3);
+}
+.labelled {
+  display: flex;
+  flex-direction: column;
+  font-family: Coiny;
+  color: violet;
+}
+
+@media screen and (min-width: 520px) {
+  .filter {
+    align-items: flex-start;
+  }
 }
