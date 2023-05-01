@@ -5,6 +5,7 @@ grid-template-columns: repeat(3, 1fr);
   align-items: center;
   margin-bottom: 4px;
   gap: 4px;
+  color: rgb(95, 36, 150)
   
 }
 .contact {
@@ -16,7 +17,6 @@ grid-template-columns: repeat(3, 1fr);
   font-weight: 400;
   border-color: transparent;
   outline: none;
-  color: blueviolet;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
