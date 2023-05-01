@@ -11,6 +11,7 @@ const Loader = () => {
       ariaLabel="circles-loading"
       wrapperClass={css.spinner}
       visible={true}
+      animationDuration="0.99"
     />
   );
 };

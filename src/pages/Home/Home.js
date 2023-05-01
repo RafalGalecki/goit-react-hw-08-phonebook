@@ -1,18 +1,12 @@
 //import { ReactSVG } from 'react-svg';
 import css from './Home.module.css';
 
-const styles = {
-  container: {
-    minHeight: 'calc(100vh - 50px)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-};
+
 
 export default function Home() {
   return (
-    <div style={styles.container}>
+    <div className={css.container}>
+      
       <h1 className={css.title}>
         <div>
           <p>My</p>
