@@ -3,6 +3,7 @@ import css from './ContactsListElement.module.css';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
 import PropTypes from 'prop-types';
+import Notiflix from 'notiflix';
 
 const ContactsListElement = ({ contact }) => {
   const dispatch = useDispatch();
@@ -11,7 +12,15 @@ const ContactsListElement = ({ contact }) => {
   }
 
   const handleClick = () => {
-    dispatch(deleteContact(contact.id));
+    Notiflix.Confirm.show(
+      'Please confirm',
+      `Are you sure to delete ${contact.name}?`,
+      'Yes',
+      'No',
+      function okCb() {
+        dispatch(deleteContact(contact.id));
+      }
+    );
   };
 
   return (

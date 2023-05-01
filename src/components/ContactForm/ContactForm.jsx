@@ -19,18 +19,26 @@ const ContactForm = () => {
         isContact = true;
       }
     });
-    isContact
-      ? Notify.warning(`${form.name.value} is already in your Contacts.`, {
-          timeout: 3000,
-          position: 'left-top',
-          closeButton: true,
+    if (isContact) {
+      Notify.warning(`${form.name.value} is already in your Contacts.`, {
+        backgroundColor: '#FF1493',
+        timeout: 3000,
+        position: 'left-top',
+      });
+    }
+    if (!isContact) {
+      dispatch(
+        addContact({
+          name: form.name.value,
+          number: form.number.value,
         })
-      : dispatch(
-          addContact({
-            name: form.name.value,
-            number: form.number.value,
-          })
-        );
+      );
+      Notify.success(`${form.name.value} has been added to your Contacts.`, {
+        timeout: 3000,
+        position: 'left-top',
+        background: '#FF1493',
+      });
+    }
     form.reset();
   };
 
