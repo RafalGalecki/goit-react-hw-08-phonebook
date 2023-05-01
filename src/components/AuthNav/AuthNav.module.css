@@ -12,8 +12,15 @@
   font-weight: 600;
   font-size: 18px;
   color: blueviolet;
+  transition-property: color;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.active {
   color: violet;
+}
+.link:hover,
+.link:focus {
+  color: magenta;
 }
