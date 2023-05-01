@@ -2,20 +2,26 @@
   display: grid;
 grid-template-columns: repeat(3, 1fr);
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 4px;
   gap: 4px;
-  color: rgb(95, 36, 150)
+  color: rgb(95, 36, 150);
+  padding: 4px 0;
   
 }
 .contact {
   margin-right: 8px;
 }
 .btnDelete {
-  padding: 2px;
+  display: flex;
+  align-self: auto;
+  max-width: 20px;
+  max-height: 20px;
+  padding: 0;
   font-size: 22px;
   font-weight: 400;
-  border-color: transparent;
+  border: none;
+  background-color: transparent;
   outline: none;
   transition-property: transform;
   transition-duration: 250ms;
