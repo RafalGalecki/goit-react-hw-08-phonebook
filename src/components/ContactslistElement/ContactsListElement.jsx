@@ -24,10 +24,7 @@ const ContactsListElement = ({ contact }) => {
   };
 
   return (
-    <div
-      className={css.contactLi}
-      // style={{ color: getRandomHexColor(), textShadow: '1px 1px black' }}
-    >
+    <div className={css.contactLi}>
       <p className={css.contact}>
         <span
           style={{ color: getRandomHexColor(), textShadow: '1px 1px black' }}

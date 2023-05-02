@@ -4,6 +4,7 @@ import { selectIsLoading } from '../../redux/contacts/selectors.js';
 import { selectFilteredContacts } from 'redux/filter/selectors.js';
 import Loader from 'components/Loader/Loader.js';
 import ContactsListElement from '../ContactslistElement/ContactsListElement';
+import ScrollButton from 'components/ScrollButton/ScrollButton.jsx';
 import css from './ContactsList.module.css';
 
 const ContactsList = () => {
@@ -23,6 +24,7 @@ const ContactsList = () => {
               <ContactsListElement contact={contact} />
             </li>
           ))}
+        <ScrollButton />
       </ul>
     </div>
   );
