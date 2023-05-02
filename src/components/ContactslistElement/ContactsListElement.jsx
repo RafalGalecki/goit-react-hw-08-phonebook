@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
 import PropTypes from 'prop-types';
 import Notiflix from 'notiflix';
+import { FaSkullCrossbones } from 'react-icons/fa';
 
 const ContactsListElement = ({ contact }) => {
   const dispatch = useDispatch();
@@ -35,7 +36,7 @@ const ContactsListElement = ({ contact }) => {
       </p>
       <p className={css.contact}>{contact.number}</p>
       <button type="button" className={css.btnDelete} onClick={handleClick}>
-        &#9760;
+        <FaSkullCrossbones />
       </button>
     </div>
   );

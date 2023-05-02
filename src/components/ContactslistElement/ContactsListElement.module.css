@@ -2,29 +2,27 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   flex-direction: row;
-  /* align-items: center; */
-  margin-bottom: 4px;
   gap: 4px;
   color: rgb(95, 36, 150);
-  padding: 4px 0;
+  padding: 6px 0;
 }
 .contact {
   margin-right: 8px;
 }
 .btnDelete {
-  display: flex;
-  align-self: auto;
-  max-width: 20px;
-  max-height: 20px;
+  max-width: 18px;
+  max-height: 18px;
   padding: 0;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   border: none;
   background-color: transparent;
   outline: none;
+  color: violet;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 30;
 }
 .btnDelete:hover,
 .btnDelete:focus {
