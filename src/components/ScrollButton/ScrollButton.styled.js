@@ -7,7 +7,7 @@ export const Button = styled.div`
   bottom: 40px;
   height: 20px;
   font-size: 3rem;
-  z-index: 1;
+  z-index: 25;
   cursor: pointer;
   color: rgba(55, 0, 201, 0.5);
 `;
