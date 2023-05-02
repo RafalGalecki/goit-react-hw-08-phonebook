@@ -45,8 +45,6 @@ export const RegisterForm = () => {
           type="password"
           name="password"
           placeholder="Enter password"
-          pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]|\W).{6,}$/"
-          title="Password should contain at least 6 characters, including at least 1 number, at least 1 letter and at least 1 capital letter or special character"
         />
       </label>
       <button className={css.btn} type="submit">
