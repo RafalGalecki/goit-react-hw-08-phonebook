@@ -27,6 +27,7 @@ export const RegisterForm = () => {
           type="text"
           name="name"
           placeholder="Enter username"
+          required
         />
       </label>
       <label className={css.label}>
@@ -36,6 +37,7 @@ export const RegisterForm = () => {
           type="email"
           name="email"
           placeholder="Enter email"
+          required
         />
       </label>
       <label className={css.label}>
@@ -45,7 +47,9 @@ export const RegisterForm = () => {
           type="password"
           name="password"
           placeholder="Enter password"
-          title="Your password must contain at least 7 characters, including numbers and letters."
+          pattern=".{7,}"
+          title="Your password must contain at least 7 characters."
+          required
         />
       </label>
       <button className={css.btn} type="submit">

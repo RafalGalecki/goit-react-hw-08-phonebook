@@ -26,6 +26,7 @@ export const LoginForm = () => {
           type="email"
           name="email"
           placeholder="Enter email"
+          required
         />
       </label>
       <label className={css.label}>
@@ -35,6 +36,7 @@ export const LoginForm = () => {
           type="password"
           name="password"
           placeholder="Enter password"
+          required
         />
       </label>
       <button className={css.btn} type="submit">
