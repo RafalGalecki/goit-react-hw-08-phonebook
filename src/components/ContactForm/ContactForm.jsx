@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from 'nanoid';
 import { selectContacts } from 'redux/contacts/selectors';
 import { addContact } from '../../redux/contacts/operations';
-import { Notify } from 'notiflix';
+import { doubledContactNotification, addedContactNotification } from 'utils/notifications';
 import css from './ContactForm.module.css';
 
 const ContactForm = () => {
@@ -20,11 +20,7 @@ const ContactForm = () => {
       }
     });
     if (isContact) {
-      Notify.warning(`${form.name.value} is already in your Contacts.`, {
-        backgroundColor: '#FF1493',
-        timeout: 3000,
-        position: 'left-top',
-      });
+      doubledContactNotification(form.name.value);
     }
     if (!isContact) {
       dispatch(
@@ -33,11 +29,7 @@ const ContactForm = () => {
           number: form.number.value,
         })
       );
-      Notify.success(`${form.name.value} has been added to your Contacts.`, {
-        timeout: 3000,
-        position: 'left-top',
-        background: '#FF1493',
-      });
+      addedContactNotification(form.name.value);
     }
     form.reset();
   };

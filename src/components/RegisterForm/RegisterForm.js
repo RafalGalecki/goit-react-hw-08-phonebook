@@ -45,6 +45,7 @@ export const RegisterForm = () => {
           type="password"
           name="password"
           placeholder="Enter password"
+          title="Your password must contain at leat 7 characters, including numbers and letters."
         />
       </label>
       <button className={css.btn} type="submit">

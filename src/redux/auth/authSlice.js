@@ -1,5 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { register, logIn, logOut, refreshUser } from './operations';
+import {
+  logInFailureNotification,
+  registrationFailureNotification,
+} from 'utils/notifications';
 
 const initialState = {
   user: { name: null, email: null },
@@ -12,7 +16,6 @@ const authSlice = createSlice({
   name: 'auth',
   initialState,
 
-  // remember to change to builder!!
   extraReducers: builder => {
     builder
       .addCase(register.fulfilled, (state, action) => {
@@ -20,10 +23,16 @@ const authSlice = createSlice({
         state.token = action.payload.token;
         state.isLoggedIn = true;
       })
+      .addCase(register.rejected, () => {
+        registrationFailureNotification();
+      })
       .addCase(logIn.fulfilled, (state, action) => {
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoggedIn = true;
+      })
+      .addCase(logIn.rejected, () => {
+        logInFailureNotification();
       })
       .addCase(logOut.fulfilled, state => {
         state.user = { name: null, email: null };
