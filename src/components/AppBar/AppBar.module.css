@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+  padding: 10px;
   border: 2px solid violet;
   border-radius: 12px;
 }

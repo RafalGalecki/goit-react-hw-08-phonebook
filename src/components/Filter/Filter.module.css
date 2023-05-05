@@ -8,24 +8,6 @@
   padding: 10px;
   gap: 16px;
 }
-.inputFilter {
-  font-family: Coiny;
-  max-width: 400px;
-  padding: 4px 12px;
-  border-radius: 6px;
-  border-color: white;
-  outline: none;
-  color: rgb(89, 22, 153);
-}
-.inputFilter::placeholder {
-  color: rgba(138, 43, 226, 0.3);
-}
-.labelled {
-  display: flex;
-  flex-direction: column;
-  font-family: Coiny;
-  color: violet;
-}
 
 @media screen and (min-width: 520px) {
   .filter {

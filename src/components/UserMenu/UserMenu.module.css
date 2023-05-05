@@ -2,31 +2,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
   gap: 12px;
-  margin-right: 10px;
 }
 
 .username {
   font-family: Coiny;
   font-weight: 400;
   color: violet;
-}
-
-.btn {
-  font-family: Coiny;
-  padding: 6px 16px 4px 16px;
-  border-radius: 8px;
-  border-color: white;
-  background-color: blueviolet;
-  color: white;
-  transition-property: background-color, color;
-  transition-duration: 400ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-.btn:hover,
-.btn:focus {
-  background-color:magenta;
-  text-shadow: 2px 2px blueviolet;
 }

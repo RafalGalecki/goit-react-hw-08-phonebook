@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { setFilter } from 'redux/filter/filterSlice';
 import { nanoid } from 'nanoid';
 import css from './Filter.module.css';
+import Input from 'styled/Input';
+import LabelContainer from 'styled/LabelContainer';
 
 const Filter = () => {
   const dispatch = useDispatch();
@@ -14,16 +16,15 @@ const Filter = () => {
 
   return (
     <div className={css.filter}>
-      <div className={css.labelled} >
+      <LabelContainer>
         <label htmlFor={filterId}>Find contacts</label>
-        <input
-          className={css.inputFilter}
+        <Input
           id={filterId}
           type="search"
           placeholder="Enter name"
           onChange={event => handleChange(event)}
-        ></input>
-      </div>
+        />
+      </LabelContainer>
     </div>
   );
 };

@@ -1,14 +1,13 @@
-//import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useAuth } from 'hooks';
-import { Link } from './Navigation.styled';
+import { Link, Nav } from './Navigation.styled';
 
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();
   const location = useLocation();
 
   return (
-    <nav>
+    <Nav>
       <Link active={location.pathname === '/' ? 'on' : 'off'} to="/" end>
         Home
       </Link>
@@ -20,6 +19,6 @@ export const Navigation = () => {
           Phonebook
         </Link>
       )}
-    </nav>
+    </Nav>
   );
 };

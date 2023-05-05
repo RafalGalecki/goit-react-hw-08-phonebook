@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-
 const activeNav = active => {
   switch (active) {
     case 'on':
@@ -15,7 +14,6 @@ const activeNav = active => {
 
 export const Link = styled(NavLink)`
   display: inline-block;
-  padding: 12px;
   font-family: Coiny;
   font-size: 24px;
   font-weight: 600;
@@ -36,4 +34,9 @@ export const Link = styled(NavLink)`
     color: magenta;
   }
 `;
-
+export const Nav = styled.nav`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+`;

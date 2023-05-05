@@ -1,6 +1,9 @@
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
-import css from './RegisterForm.module.css';
+import Button from 'styled/Button';
+import Input from 'styled/Input';
+import LabelContainer from 'styled/LabelContainer';
+import Form from 'styled/Form';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -19,31 +22,18 @@ export const RegisterForm = () => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
-      <label className={css.label}>
-        Username
-        <input
-          className={css.input}
-          type="text"
-          name="name"
-          placeholder="Enter username"
-          required
-        />
-      </label>
-      <label className={css.label}>
-        Email
-        <input
-          className={css.input}
-          type="email"
-          name="email"
-          placeholder="Enter email"
-          required
-        />
-      </label>
-      <label className={css.label}>
-        Password
-        <input
-          className={css.input}
+    <Form onSubmit={handleSubmit} autoComplete="off">
+      <LabelContainer>
+        <label>Username</label>
+        <Input type="text" name="name" placeholder="Enter username" required />
+      </LabelContainer>
+      <LabelContainer>
+        <label>Email</label>
+        <Input type="email" name="email" placeholder="Enter email" required />
+      </LabelContainer>
+      <LabelContainer>
+        <label>Password</label>
+        <Input
           type="password"
           name="password"
           placeholder="Enter password"
@@ -51,10 +41,8 @@ export const RegisterForm = () => {
           title="Your password must contain at least 7 characters."
           required
         />
-      </label>
-      <button className={css.btn} type="submit">
-        Register
-      </button>
-    </form>
+      </LabelContainer>
+      <Button type="submit">Register</Button>
+    </Form>
   );
 };
