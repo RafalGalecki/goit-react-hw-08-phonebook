@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   font-family: Coiny;
-  padding: 8px 20px 6px 20px;
-  border-radius: 9px;
+  height: 32px;
+  padding: 0 15px;
+  border-radius: 15px;
   border-color: white;
   background-color: blueviolet;
   color: white;

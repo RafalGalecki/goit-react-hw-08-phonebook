@@ -1,9 +1,10 @@
 .contactsList {
   font-family: Coiny;
+  min-width: 320px;
   margin-top: 10px;
   padding: 10px;
   border: 2px solid violet;
-  border-radius: 12px;
+  border-radius: 20px;
   color: blueviolet;
   overflow: hidden;
 }
