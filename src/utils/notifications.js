@@ -14,6 +14,10 @@ export const registrationFailureNotification = () => {
   Notify.failure('Registration failed.', NOTIFY_PARAMS);
 };
 
+export const registrationFailureEmailInUseNotification = () => {
+  Notify.failure('This e-mail address is already in use.', NOTIFY_PARAMS);
+}
+
 export const doubledContactNotification = name => {
   Notify.warning(`${name} is already in your Contacts.`, NOTIFY_PARAMS);
 };
