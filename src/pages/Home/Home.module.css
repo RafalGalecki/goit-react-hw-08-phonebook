@@ -73,7 +73,7 @@
 .title:hover {
    background-image: (linear-gradient(to left, #780bbb, #d155b8));
     transform: scale(1.1);
-    cursor: pointer;
+    cursor:none;
 }
 .title:hover::before,
 .title:hover::after {
